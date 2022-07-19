@@ -15,14 +15,21 @@
    
 }
 
-
+.wrap{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto !important;
+}
 /* header starts */
-
+.mob_nav{
+    display: none;
+}
 header {
     background-color: #ffffff;
 }
 
 .container {
+   
     width: 1200px;
     margin: 0 auto;
 }
@@ -37,6 +44,7 @@ header {
 .nav {
     display: flex;
     justify-content: space-between;
+
 }
 
 header .container .nav ul {
@@ -153,6 +161,7 @@ header .container .nav ul li a:hover {
 
 .card_block {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
@@ -163,9 +172,9 @@ header .container .nav ul li a:hover {
 
 .card .card_circle {
     background-color: #D6D8DB;
-    padding-top: 2.5rem;
-    width: 11vw;
-    height: 21vh;
+    padding-top: 2rem;
+    width: 14vw;
+    height: 29vh;
     margin: 0 auto;
     border-radius: 50em;
     
@@ -174,8 +183,8 @@ header .container .nav ul li a:hover {
 .card_circle .card_shape {
     clip-path: polygon(0 33%, 52% 0, 100% 33%, 100% 68%, 48% 100%, 0 67%);
     margin: auto;
-    width: 7.3vw;
-    height: 9vh;
+    width: 9.3vw;
+    height: 20vh;
     background-color: #ffffff;
    
     /* box-shadow: 0 0 15px rgb(0 0 0 / 40%); */
@@ -184,7 +193,7 @@ header .container .nav ul li a:hover {
 .card_circle .card_shape .fa-3x {
     font-size: 3rem;
     color: #555555;
-    padding-top: 0.3rem;
+    padding-top: 2.3rem;
     
 }
 
@@ -227,9 +236,10 @@ header .container .nav ul li a:hover {
 }
 .section_three .section_three_block{
    display: flex;
+   flex-wrap: wrap;
    justify-content: space-evenly;
    color: #ffffff;
-    
+   /* gap: 2rem; */
 }
 .section_three .section_three_block .section_three_block_img{
     object-fit: cover;
@@ -293,6 +303,7 @@ padding: 1.5rem 1rem;
 }
 .section_four ul{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 2rem;
 }
@@ -306,14 +317,13 @@ padding: 1.5rem 1rem;
     display: flex;
     justify-content: center;
     gap: 1.875rem;
-    
+    flex-wrap: wrap;
 }
 .section_four .portfolio .col_one{
     display: flex;
     flex-direction: column;
-    
     gap: 1.875rem;
-    
+    flex-wrap: wrap;
     
 }
 .section_four .portfolio .col_one img{
@@ -355,6 +365,7 @@ padding: 1.5rem 1rem;
     display: flex;
     justify-content: center;
     gap: 3.813rem;
+    flex-wrap: wrap;
  }
  .section_six .section_six_content .terminal_text{
     width: 26rem;
@@ -400,6 +411,7 @@ padding: 1.5rem 1rem;
     margin-left: 1.6rem;
     display: flex;
     gap: 2rem;
+    flex-wrap: wrap;
  }
  .footer .footer_content h2{
     color: #ffffff;
@@ -484,6 +496,7 @@ padding: 1.5rem 1rem;
     display: flex;
     justify-content: space-between;
     color: #ffffff;
+    flex-wrap: wrap;
 }
 .left_txt{
     font-size: 0.938rem;
@@ -588,6 +601,7 @@ padding: 1.5rem 1rem;
 .contact_us{
     margin: 3rem 1.6rem;
     display: flex;
+    flex-wrap: wrap;
     gap: 1.875rem;
 }
 .contact_us .form h1{
@@ -616,6 +630,10 @@ padding: 1.5rem 1rem;
 .form_content .form_btn a:hover{
     background-color: #ffffff;
     color: #000;
+}
+iframe{
+    width: 550px;
+    height: 233px;
 }
 .address h1{
     font-size: 2.375rem;
@@ -743,7 +761,7 @@ padding: 1.5rem 1rem;
     font-size: 90%;
     color: #c7254e;
     background-color: #f9f2f4;
-    white-space: nowrap;
+    
     border-radius: 4px;
   }
   .about_content ul{
@@ -765,6 +783,7 @@ padding: 1.5rem 1rem;
     margin: 2.35rem 1.6rem;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .blog .blog_col{
     display: flex;
@@ -812,3 +831,315 @@ padding: 1.5rem 1rem;
     color: #000;
 }
    /*..................................BLOG PAGE STARTS..................................*/
+
+  
+
+
+
+  
+   
+
+ /*..................................RESPONSIVE..................................*/
+     
+@media (max-width: 576px) { 
+    .container{
+        width: 100% ;
+        margin: 0 auto;
+    }
+    
+    .nav{
+        display: none;
+    }
+    .mob_nav{
+        display: block !important;
+        
+    }
+    .mob_nav .navbar{
+        margin: 1rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .mob_nav .navbar .mob_logo a{
+        font-size: 30px;
+        color: #272929;
+        font-weight: bold;
+    }
+    header .container .nav ul li {
+        margin: 1.5rem 1rem;
+    }
+    header .container .nav ul li a{
+        font-size: 20px;
+        padding-top: 1rem;
+    }
+    .section_one_block {
+        width: 89% !important;
+        margin: 5rem 1.3rem;
+    }
+    .section_one_block .section_one_heading{
+        width: 83vw;
+        font-size: 30px;
+    }
+    .section_one_block  p{
+        width: 98%;
+        font-size: 14px;
+    }
+   
+    .nav{
+        justify-content: space-between;
+    }
+    .section_one {
+       
+    }
+    .section_bg {
+        padding: 0;
+    }
+    .section_four .portfolio .col_one img {
+        width: 100%;
+    }
+    .card_block {
+        gap: 3rem;
+    }
+    .card {
+        width: 54%;
+        
+    }
+    .card .card_circle{
+        width: 60% !important;
+        height: 50% !important;
+    }
+    .card_circle .card_shape{
+        width: 36.3vw;
+        height: 12vh;
+    }
+    .card_circle .card_shape .fa-3x{
+        padding-top: 2rem;
+    }
+    .section_three .section_three_block {
+        gap: 2rem;
+    }
+    .section_six .section_six_content .terminal_text {
+        width: 100%;
+    }
+   
+    
+   
+    .section_three .section_three_block .section_three_block_img{
+        width: 100%;
+    }
+    .section_three .section_three_block .section_three_block_img .price .old_p{
+        margin-right: 10rem;
+    }
+    .section_six .section_six_content .terminal_text {
+        
+        margin: 0 2rem;
+    }
+    .footer .footer_content{
+        margin: 0 2rem;
+    }
+    .footer_bottom_content {
+      
+        margin: 0 3.2rem; 
+        display: flex;
+        justify-content: center;
+        color: #ffffff;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    /* About age start */
+    .header_content .header_button {
+        padding-top: 1rem;
+        padding: 1rem 1rem 0 0;
+    }
+    .header_content .header_button a:first-child {
+        padding: 5px 19px 5px 10px;
+        font-size: 14px;
+        font-weight: 100;
+    }
+    .header_content .header_button a:last-child {
+        padding: 5px 9px 5px 24px;
+        font-size: 14px;
+        font-weight: 100;
+    }    
+    .about_img img {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .about_content {
+         margin: 0; 
+    }
+    .about_content .code small {
+        padding: 0;
+    }
+    
+    /* About age end */
+    /* contact start */
+    .form{
+        width: 100%;
+    }
+    .form_content input, textarea{
+        width: 100%;
+    }
+    iframe{
+        width: 100%;
+    }
+    /* contact end */
+ }
+
+
+@media (max-width: 767px) { 
+    .mob_nav{
+        display: none;
+    }
+    .container{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .section_one_block{
+        width: 93%;
+    }
+    .section_one_block .section_one_heading{
+        width: 100%;
+    }
+    .section_one_block p{
+        width: 100%;
+    }
+    .card {
+        width: 36%;
+       
+    }
+    .card .card_circle {
+        width: 100%;
+        height: 60%;
+    }
+    .card_circle .card_shape {
+        width: 24.3vw;
+        height: 13vh;
+    }
+    .card_circle .card_shape .fa-3x {
+        font-size: 3rem;
+        color: #555555;
+        padding-top: 2.3rem;
+    }
+    
+    .section_three .section_three_block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      
+        gap: 2rem;
+    }
+    .section_four .portfolio .col_one img {
+        width: 100%;
+    }
+    .section_six .section_six_content .terminal_text {
+       width: 100%;
+        margin: 0 5rem;
+    }
+    .footer .footer_content{
+        margin: 0 5rem;
+    }
+    /* about start */
+    .about_img img {
+        width: 100%;
+        margin: 0 auto;
+    }
+    /* about ends */
+    /* blog starts */
+    .blog .blog_col .blog_card {
+        width: 100%;
+       
+    }
+    .blog .blog_col .blog_card .card_img img {
+        width: 100%;
+    }
+    /* blog end */
+
+     /* contact start */
+     .form{
+        width: 100%;
+    }
+    .form_content input, textarea{
+        width: 100%;
+    }
+    iframe{
+        width: 100%;
+    }
+    /* contact end */
+ }
+
+
+@media (max-width: 992px) {
+    .container{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .section_one_block {
+        width: 66%;
+    }
+    .section_one_block .section_one_heading{
+        width: 100%;
+    }
+    .section_one_block p{
+        width: 100%;
+    }
+    .section_three .section_three_block {
+        gap: 2rem;
+    }
+    .footer_block {
+        width: 14rem;
+    }
+    /* about start */
+    .about_img img {
+        width: 100%;
+        margin: 0 auto;
+    }
+    /* about ends */
+     /* blog starts */
+     .blog .blog_col .blog_card {
+        width: 100%;
+       
+    }
+    .blog .blog_col .blog_card .card_img img {
+        width: 100%;
+    }
+    /* blog end */
+     /* contact start */
+     .form{
+        width: 100%;
+    }
+    .form_content input, textarea{
+        width: 100%;
+    }
+    .address{
+        width: 100%;
+    }
+    iframe{
+        width: 100%;
+    }
+    /* contact end */
+ }
+
+@media (max-width: 1100px) { 
+    .container{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .section_one_block {
+        width: 66%;
+    }
+    .section_one_block .section_one_heading{
+        width: 100%;
+    }
+    .section_one_block p{
+        width: 100%;
+    }
+    .section_three .section_three_block {
+        gap: 2rem;
+    }
+ }
+
+
+@media (max-width: 1300){} 
+
+  /*..................................RESPONSIVE..................................*/
