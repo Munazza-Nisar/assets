@@ -72,7 +72,7 @@ header .container .nav ul li a:hover {
 /* section one starts */
 
 .section_one {
-    background-image: url(../images/header.jpg);
+    background-image: url(./images/header.jpg);
     padding: 2.5rem 0;
 }
 
@@ -143,13 +143,13 @@ header .container .nav ul li a:hover {
 .section_bg{
     
     padding-bottom: 7rem;
-    background-image: url(../images/mountain.jpg) ;
+    background-image: url(./images/mountain.jpg) ;
     object-fit: cover;
     
 }
 .section_three {
     margin: 6.9rem 1.6rem;
-    background-image: url(../images/mountain.jpg);
+    background-image: url(./images/mountain.jpg);
 }
 
 .section_three h1 {
@@ -168,7 +168,7 @@ header .container .nav ul li a:hover {
 }
 .section_three .section_three_block .section_three_block_img{
     object-fit: cover;
-    background-image: url(../images/carpathian.jpg);
+    background-image: url(./images/carpathian.jpg);
 
 }
 .section_three .section_three_block .section_three_block_img .stars{
